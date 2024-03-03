@@ -1,10 +1,7 @@
 import React, { useState,useRef } from 'react';
 import './contact.css';
 import emailjs from "@emailjs/browser";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPodcast,faAddressCard,faEnvelope} from '@fortawesome/free-solid-svg-icons';
-import { faDiscord, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { Form, Input, TextArea, Button } from "semantic-ui-react";
+
 import Container from 'react-bootstrap/Container';
 
 import Footer from './Layout.js';

@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import './team.css';
 import Footer from './Layout.js';
 import users from '../Data/users.json';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEarth,faLin} from '@fortawesome/free-solid-svg-icons';
+
 import Popup from './popup.jsx';
 import { SocialIcon } from 'react-social-icons'
 

@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import './newsletter.css';
 import projects from '../Data/projects.json';
 import Footer from './Layout.js';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faNewspaper} from '@fortawesome/free-solid-svg-icons';
+
 import { SocialIcon } from 'react-social-icons'
 
 

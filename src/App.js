@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav';
-import { Link } from 'react-router-dom';
+import { BrowserRouter, Link } from 'react-router-dom';
 import Navbar from './components/Navbar.js';
 import './App.css';
 //import "./components/Navbar.css";
@@ -22,15 +22,7 @@ import Opportunities from './Pages/opportunities.jsx'
 import Newsletter from './Pages/newsletter.jsx'
 
 /*
-
-*/
-function App() {
-  return (
-    <div className="App"> 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-&nbsp;&nbsp;
-  <Link class="navbar-brand  mr-auto" style={{ marginRight: '10px',display:"inline-flex !important"}} to="/">   
-  <img
+<img
     
 src="https://github.com/HoumanEbrahimi/Lol/blob/main/TMI.png?raw=true"
 alt=""
@@ -38,7 +30,23 @@ width="45"
 height="45"
 
 />
-  </Link>
+*/
+function App() {
+  return (
+    <div className="App"> 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+&nbsp;&nbsp;
+  <a class="navbar-brand  mr-auto" style={{ marginRight: '10px',display:"inline-flex !important"}} to="/">
+  <img 
+  style={{position:"absolute",left:"10px",top:"10px"}}
+    
+    src="https://github.com/HoumanEbrahimi/Lol/blob/main/TMI.png?raw=true"
+    alt=""
+    width="65"
+    height="65"
+    
+    />   
+  </a>
 
   <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -69,7 +77,7 @@ height="45"
     </ul>
   </div>
 </nav>
-      
+      <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Main />} />
@@ -81,6 +89,8 @@ height="45"
         <Route path='/newsletter' element={<Newsletter />} />
 
       </Routes>
+      </BrowserRouter>
+
     </div> 
 
     //<BrowserRouter>
