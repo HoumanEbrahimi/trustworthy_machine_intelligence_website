@@ -38,12 +38,12 @@ function App() {
 &nbsp;&nbsp;
   <a class="navbar-brand  mr-auto" style={{ marginRight: '10px',display:"inline-flex !important"}} to="/">
   <img 
-  style={{position:"absolute",left:"10px",top:"10px"}}
+  style={{position:"absolute",left:"10px",top:"5px"}}
     
     src="https://github.com/HoumanEbrahimi/Lol/blob/main/TMI.png?raw=true"
     alt=""
-    width="65"
-    height="65"
+    width="50"
+    height="50"
     
     />   
   </a>
@@ -51,10 +51,10 @@ function App() {
   <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div style={{marginLeft:"30px"}} class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+        <a  class="nav-link" href="/">Home <span class="sr-only"></span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/team" >Team</a>
